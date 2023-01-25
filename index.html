@@ -38,10 +38,10 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="bg-white h-20">
+        <nav class="bg-white h-20 fixed top-0 right-0 left-0">
             <div class="flex justify-between items-center h-full w-full max-w-7xl mx-auto font-bebas">
                 <h1 class="text-2xl">Jhaka naka Production</h1>
-                <ul class="flex text-lg gap-10">
+                <ul class="text-lg gap-10 hidden md:inline-flex">
                     <li>About Us</li>
                     <li>Our Movies</li>
                     <li>Services</li>
@@ -50,7 +50,77 @@
         </nav>
     </header>
 
-    <main></main>
+    <main class="pt-20">
+        <!-- Banner Section -->
+        <section class="h-screen bg-[url('./images/banner.jpg')] bg-cover">
+            <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+                <div class="font-bebas">
+                    <h2 class="text-white text-lg">Movie Production Studio</h2>
+                    <h1 class="text-7xl text-white">Films made to</h1>
+                    <h1 class="text-7xl text-yellow">Perfection</h1>
+                    <p class="font-montserrat text-white max-w-lg mb-10">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi soluta hic beatae quaerat
+                        ducimus.
+                    </p>
+
+                    <button
+                        class="font-bebas border-2 border-white py-2 px-3 text-white text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">
+                        Discover More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="py-40">
+            <div class="border-2 border-black w-full max-w-7xl mx-auto">
+                <div class="lg:flex p-5">
+                    <div class="w-full lg:w-1/2 h-[500px] bg-[url('./images/camera-man.jpg')] bg-cover bg-center">
+                    </div>
+                    <div class="w-full lg:w-1/2 p-5 font-bebas">
+                        <h2 class="text-lg">About Us</h2>
+                        <h1 class="text-7xl">Filming Experience</h1>
+                        <h1 class="text-7xl">Just Got Better</h1>
+                        <p class="font-montserrat mb-10">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est ducimus sunt
+                            labore vero. Aliquid maxime voluptatem reprehenderit optio quas? Quis est quos, nulla
+                            commodi accusamus dolorum sunt ipsam neque?
+                        </p>
+                        <button
+                            class="font-bebas border-2 border-black py-2 px-3 text-black text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">
+                            Discover More
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 p-5 gap-5">
+                    <div>
+                        <div class="bg-black h-1.5 w-full mb-2"></div>
+                        <h1 class="text-6xl font-bebas">OUR VISION</h1>
+                        <p class="font-montserrat">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi soluta hic beatae
+                            quaerat ducimus.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-black h-1.5 w-full mb-2"></div>
+                        <h1 class="text-6xl font-bebas">OUR VISION</h1>
+                        <p class="font-montserrat">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi soluta hic beatae
+                            quaerat ducimus.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-black h-1.5 w-full mb-2"></div>
+                        <h1 class="text-6xl font-bebas">OUR VISION</h1>
+                        <p class="font-montserrat">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi soluta hic beatae
+                            quaerat ducimus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
 </body>
